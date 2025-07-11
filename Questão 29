@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void trocar(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void trocar(float* a, float* b) {
+    float temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 1, y = 2;
+    float f1 = 1.5, f2 = 2.5;
+    trocar(&x, &y);
+    trocar(&f1, &f2);
+    cout << "x: " << x << ", y: " << y << endl;
+    cout << "f1: " << f1 << ", f2: " << f2 << endl;
+    return 0;
+}
