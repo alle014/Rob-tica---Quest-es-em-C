@@ -1,0 +1,14 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+string mostrarMensagem() {
+    return ("Bom dia!");
+}
+
+int main(){
+    string saldacao = mostrarMensagem();
+    std::cout << saldacao << endl;
+    return 0;
+}
