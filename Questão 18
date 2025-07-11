@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void incrementar(int* p) {
+    (*p)++;
+}
+
+int main() {
+    int x = 5;
+    cout << "Antes de incrementar: " << x << endl;
+
+    incrementar(&x);
+
+    cout << "Depois de incrementar: " << x << endl;
+
+    return 0;
+}
