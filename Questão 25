@@ -1,0 +1,24 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+int inverteSinal (int &a){
+      if (a==0){
+      return a;
+      } else{
+      return a*-1;
+      }
+}
+
+int main()
+{
+    int nmrrandom;
+    
+    cout << "Digite um numero: " << endl;
+    cin >> nmrrandom;
+    
+    int resultado = inverteSinal(nmrrandom);
+    
+    cout << "numero com sinal inverso: " << resultado << endl;
+    return 0;
+}
