@@ -1,0 +1,15 @@
+#pragma once
+#include <iostream>
+using namespace std;
+
+void porValor(int x) {
+    x++;
+}
+
+void porReferencia(int& x) {
+    x++;
+}
+
+void comPonteiro(int* x) {
+    (*x)++;
+}
