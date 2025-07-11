@@ -1,0 +1,17 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    const int bonus = 200;
+    float salario;
+    float salarionovo;
+    
+    std::cout << "Digite seu salario: " << std::endl;
+    cin >> salario;
+    
+    salarionovo = salario + bonus;
+    
+    std::cout << "Seu salario desse mês e: " << salarionovo << std::endl;
+    return 0;
