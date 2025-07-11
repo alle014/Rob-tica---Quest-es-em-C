@@ -1,0 +1,28 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool parimpar (int a){
+    if (a%2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+int main(){
+    int numero;
+    
+    std::cout << "Informe um numero inteiro qualquer: " << std::endl;
+    cin >> numero;
+    
+    if (parimpar(numero)) {
+        cout << "O numero e par." << endl;
+    } else {
+        cout << "O numero e impar." << endl;
+    }
+
+    return 0;
+    
+}
