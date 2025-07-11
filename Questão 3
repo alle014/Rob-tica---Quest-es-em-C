@@ -1,0 +1,9 @@
+float area, raio;
+   const float PI = 3.14;
+
+   cout << "Informe o raio do círculo : ";
+cin >> raio;
+
+   area = PI * (raio * raio);
+
+   cout << "A area vai ser igual a : " << area << endl;
