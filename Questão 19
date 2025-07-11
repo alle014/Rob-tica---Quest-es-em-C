@@ -1,0 +1,22 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+float mediaNota(float a, float b, float c){
+    return (a * b * c)/3;
+}
+
+int main(){
+    float nota1, nota2, nota3;
+    
+    cout << "Insira sua primeira nota: " << endl;
+    cin >> nota1;
+    cout << "Insira sua segunda nota: " << endl;
+    cin >> nota2;
+    cout << "Insira sua terceira nota: " << endl;
+    cin >> nota3;
+    
+    float notas = mediaNota(nota1, nota2, nota3);
+    
+    cout << "A média entre as notas é: " << notas << endl;
+}
