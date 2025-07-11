@@ -1,0 +1,15 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    int numerorandom = 18;
+    int *ponteiro;
+    
+    ponteiro = &numerorandom;
+    
+    //Endereço de memoria
+    cout << "valor armazenado no ponteiro: " << ponteiro << endl;
+    cout << "valor apontado por esse ponteiro: " << *ponteiro << endl;
+}
