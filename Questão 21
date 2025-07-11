@@ -1,0 +1,20 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+float Arearetangulo(float a, float b){
+    return a * b;
+}
+
+int main(){
+    float base, altura;
+    
+    cout << "Insira a base do retangulo: " << endl;
+    cin >> base;
+    cout << "Insira a altura do retangulo: " << endl;
+    cin >> altura;
+    
+    float area = Arearetangulo(base, altura);
+    
+    cout << "A area do retangulo é: " << area << endl;
+}
