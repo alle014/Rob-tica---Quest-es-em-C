@@ -1,0 +1,21 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+string notas(float a){
+    if(a >= 7){
+        cout << "Voce esta aprovado" << endl;
+     } else{
+         cout << "Voce estaa reprovado" << endl;
+         }
+}
+
+int main(){
+    float nota;
+    
+    cout << "Informe sua nota: "<< endl;
+    cin >> nota;
+    
+    notas(nota);
+}
