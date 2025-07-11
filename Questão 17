@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void alterarNumeros(int valor, int &referencia) {
+    valor = valor + 10;
+    referencia = referencia + 20;
+
+    cout << "Dentro da função:" << endl;
+    cout << "Valor (por valor): " << valor << endl;
+    cout << "Referencia (por referência): " << referencia << endl;
+}
+
+int main() {
+    int a = 5;
+    int b = 10;
+
+    alterarNumeros(a, b);
+
+    cout << "\nFora da função:" << endl;
+    cout << "a (por valor): " << a << endl;
+    cout << "b (por referência): " << b << endl;
+
+    return 0;
+}
