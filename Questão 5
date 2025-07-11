@@ -1,0 +1,17 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main(){
+  std::string nome;
+  int idade;
+  
+  std::cout << "Escreva seu nome: " << std::endl;
+  cin >> nome;
+  std::cout << "Escreva sua idade " << std::endl;
+  cin >> idade;
+  
+  std::cout << "Ola, " << nome << ". Parabens pelos " << idade << " anos." << std::endl; 
+}
