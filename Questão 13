@@ -1,0 +1,25 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+void trocaValor (int* a, int* b){
+    int temporario = *a;
+    *a = *b;
+    *b = temporario;
+}
+
+int main(){
+    int x;
+    int y;
+        
+    cout << "Digite um valor inteiro para X: " << endl;
+    cin >> x;
+    cout << "Digite um valor inteiro para Y: " << endl;
+    cin >> y;
+    
+    trocaValor(&x, &y);
+    
+    cout << "valor novo do X e = " << x << endl;
+    cout << "valor novo do Y e = " << y << endl; 
+}
