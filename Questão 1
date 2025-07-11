@@ -1,0 +1,19 @@
+int main() {
+    //Int pra numero inteiro
+    int idade = 18;
+    //Float pra numero quebrado
+    float pi = 3.14;
+    //Char pra apenas uma letra
+    char letra_qualquer = 'A';
+    //Bool tem valor verdadeiro (true) ou falso (false)
+    bool Aprovado = true;
+    //String é pra guardar palavras
+    string name = "Daniel";
+
+    cout << "Inteiro: " << idade << endl;
+    cout << "Numero quebrado: " << pi << endl;
+    cout << "Caracter unico: " << letra_qualquer << endl;
+    cout << "Verdadeiro ou Falso: " << Aprovado << endl;
+    cout << "Palavras: " << name << endl;
+    return 0;
+}
