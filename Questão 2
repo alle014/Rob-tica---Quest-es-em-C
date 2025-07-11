@@ -1,0 +1,8 @@
+int main() {
+   float numero1 = 10;
+   float numero2 = 2;
+   float resultado;
+
+   resultado = numero1 + numero2;
+
+   cout << "O resultado é : " << resultado << endl;
