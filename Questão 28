@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    float altura;
+};
+
+void imprimirPessoa(Pessoa* p) {
+    cout << p->nome << " - " << p->idade << " anos - " << p->altura << " m" << endl;
+}
+
+int main() {
+    Pessoa p = {"Ana", 20, 1.65};
+    imprimirPessoa(&p);
+    return 0;
+}
