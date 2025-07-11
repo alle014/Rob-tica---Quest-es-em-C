@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+const float LIMITE_SAQUE = 1000.0;
+const float LIMITE_DEPOSITO = 5000.0;
+
+float saldo = 1000.0;
+
+void saque(float valor) {
+    if (valor <= saldo && valor <= LIMITE_SAQUE) saldo -= valor;
+}
+
+void deposito(float valor) {
+    if (valor <= LIMITE_DEPOSITO) saldo += valor;
+}
+
+void consultarSaldo() {
+    cout << "Saldo atual: " << saldo << endl;
+}
+
+int main() {
+    int op;
+    float valor;
+    cout << "1 - Saque\n2 - Deposito\n3 - Saldo\nEscolha: ";
+    cin >> op;
+
+    if (op == 1) {
+        cout << "Valor: ";
+        cin >> valor;
+        saque(valor);
+    } else if (op == 2) {
+        cout << "Valor: ";
+        cin >> valor;
+        deposito(valor);
+    } else if (op == 3) {
+        consultarSaldo();
+    }
+
+    consultarSaldo();
+    return 0;
+}
